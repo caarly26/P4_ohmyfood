@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes loader {
   0% {
     opacity: 1;
@@ -163,6 +164,7 @@ nav .hook h2, nav .hook p {
 
 #restaurant {
   background: #F7F7F7;
+  /*RESPONSIVE DESKTOP*/
 }
 #restaurant .boxCardRestaurant {
   display: flex;
@@ -208,54 +210,50 @@ nav .hook h2, nav .hook p {
   right: 10%;
   top: 25%;
   font-size: 1.5em;
-  -webkit-text-stroke: 1px white;
+  transition: color 1s;
+  color: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */
+  background-color: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */
 }
 #restaurant .cardRestaurant .CardDescription i:hover {
-  animation: all;
-  transition: 1.5s;
-  font-weight: bold;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */
   -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent; /* Rend le texte transparent pour montrer le dégradé */
+  font-weight: bold;
 }
-
-/*RESPONSIVE DESKTOP*/
 @media only screen and (min-width: 1024px) {
-  nav {
+  #restaurant nav {
     flex-direction: column;
   }
-  .fonctionnement .boxFonctionnement ul {
+  #restaurant .fonctionnement .boxFonctionnement ul {
     justify-content: space-between;
   }
-  .fonctionnement .boxFonctionnement ul li {
+  #restaurant .fonctionnement .boxFonctionnement ul li {
     width: 32%;
   }
-  .boxCardRestaurant {
+  #restaurant .boxCardRestaurant {
     display: flex;
     justify-content: space-between;
   }
-  .boxCardRestaurant h2 {
+  #restaurant .boxCardRestaurant h2 {
     width: 100%;
   }
-  .boxCardRestaurant .cardRestaurant {
+  #restaurant .boxCardRestaurant .cardRestaurant {
     width: 24%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .loader__food {
+  #restaurant .loader__food {
     top: 40%;
     left: 45%;
   }
 }
-.loader__food span {
+#restaurant .loader__food span {
   display: inline-block;
   width: 5px;
   height: 20px;
   padding-right: 1em;
 }
-
-.loader__fork {
+#restaurant .loader__fork {
   vertical-align: middle;
   position: absolute;
   top: 50%;
@@ -263,35 +261,27 @@ nav .hook h2, nav .hook p {
   animation: rotate 1s linear infinite;
   animation: loaderSize 2.5s infinite ease-in-out;
 }
-
-.loader__food span:nth-child(1) {
+#restaurant .loader__food span:nth-child(1) {
   animation: grow 1s ease-in-out infinite;
 }
-
-.loader__food span:nth-child(2) {
+#restaurant .loader__food span:nth-child(2) {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
-
-.loader__food span:nth-child(3) {
+#restaurant .loader__food span:nth-child(3) {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
-
-.loader__food span:nth-child(4) {
+#restaurant .loader__food span:nth-child(4) {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
-
-.loader__food span:nth-child(5) {
+#restaurant .loader__food span:nth-child(5) {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
-
-.loader__food span:nth-child(6) {
+#restaurant .loader__food span:nth-child(6) {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
-
-.loader__food span:nth-child(7) {
+#restaurant .loader__food span:nth-child(7) {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
-
-.loader__food span:nth-child(8) {
+#restaurant .loader__food span:nth-child(8) {
   animation: grow 1s ease-in-out 0.15s infinite;
 }/*# sourceMappingURL=home.css.map */

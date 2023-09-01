@@ -198,28 +198,26 @@ nav{
                 border-radius: 2px;padding: 0.25em;
             }
             .CardDescription{
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                padding: 0.5em 1em;
-                i{
-                    position: absolute;
-                    right: 10%;
-                    top: 25%;
-                    font-size: 1.5em;
-                    -webkit-text-stroke: 1px white;
-                    &:hover{
-                        animation: all;
-                        transition: 1.5s;
-                        font-weight: bold;
-                        background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;}
-                }
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              padding: 0.5em 1em;
+              i{  
+                  position: absolute;
+                  right: 10%;
+                  top: 25%;
+                  font-size: 1.5em; 
+                  transition: color 1s;
+                  color: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */;
+                  background-color: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */;
+                  &:hover{
+                    background: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */
+                    -webkit-background-clip: text;
+                    color: transparent; /* Rend le texte transparent pour montrer le dégradé */
+                    font-weight: bold;
+                    }
+              }
             }
-    }
 }
 
 /*RESPONSIVE DESKTOP*/
@@ -306,5 +304,4 @@ nav{
   .loader__food span:nth-child(8) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-
-  
+}
