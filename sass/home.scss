@@ -212,12 +212,13 @@ nav{
                   background-color: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */;
                   &:hover{
                     background: linear-gradient(188deg, #9356DC 17%, #FF79DA 100%); /* Dégradé linéaire comme couleur de remplissage */
-                    -webkit-background-clip: text;
-                    color: transparent; /* Rend le texte transparent pour montrer le dégradé */
+                    -webkit-background-clip: text; /* Permet au dégradé de respecter la forme du texte */
+                    color: transparent; 
                     font-weight: bold;
                     }
               }
             }
+    }
 }
 
 /*RESPONSIVE DESKTOP*/
@@ -304,4 +305,3 @@ nav{
   .loader__food span:nth-child(8) {
     animation: grow 1s ease-in-out 0.15s infinite;
   }
-}
